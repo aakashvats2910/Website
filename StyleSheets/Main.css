@@ -1,0 +1,104 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.fontFamilyForNavigationBar {
+    font-family: "Lato", sans-serif;
+    margin-left: 190px;
+    margin-right: 10px;
+    margin-bottom: 2%;
+}
+
+.fontFamilyForNavigationBar2 {
+    font-family: "Lato", sans-serif;
+    margin-left: 190px;
+    margin-right: 10px;
+    margin-bottom: 0%;
+}
+
+.pointer {cursor: pointer;}
+
+.sidenav {
+    height: 100%;
+    width: 180px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f3f3f3;
+    border-right: 5px solid #fffdf8;
+}
+
+.mainForMaps {
+    margin-left: 190px;
+    margin-right: 10px;
+}
+
+.mainForFieldsText {
+    margin-left: 190px;
+    font-size: 25px;
+}
+
+.main {
+    margin-left: 180px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+div.fixed {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    text-align: center;
+    background-color: bisque;
+    margin-left: 80px;
+    font-size: 15px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}

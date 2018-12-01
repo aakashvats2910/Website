@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Prototype Wesbite</title>
+    <link rel="stylesheet" type="text/css" href="StyleSheets/Main.css">
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #4CAF50;
+        }
+    </style>
+</head>
+
+<body vlink="#fff8dc" alink="#ff7f50">
+
+<div class="sidenav">
+    <a href="HomePage.html" id="homepage">HomePage</a>
+    <a href="Hyderabad.html" id="hyderabad">Hyderabad</a>
+    <a href="Vijayawada.html" id="vijayawada">Vijaywada</a>
+    <a href="Vizag.html" id="vizag">Vizag</a>
+    <a href="DistanceSecond.html">Distance Calculator</a>
+</div>
+<!--<p>-->
+    <!--<img src="final.jpg" width="130" height="110" style="margin-left: 180px">-->
+<!--<h2 style="margin-left: 200px">ACE Ltd.</h2>-->
+<!--</p>-->
+
+<table style="margin-left: 0px">
+    <tr>
+        <td>
+            <img src="final.jpg" width="130" height="110" style="margin-left: 180px">
+        </td>
+        <td style="font-size: 50px">
+            &ensp;ACE Ltd.
+        </td>
+    </tr>
+</table>
+
+<ul class="fontFamilyForNavigationBar" style="font-size: 25px">
+    <li style="border-right: 1px solid #bbb;" id="home"><a href="HomePage.html">ACE Ltd.</a></li>
+    <li style="float: right;border-right: 1px solid #bbb;" id="contact"><a href="ContactPage.html">CONTACT US</a></li>
+    <li style="float: right;border-right: 1px solid #bbb;" id="about"><a href="AboutPage.html">ABOUT US</a></li>
+</ul>
+
+<style>
+    input[type=text] {
+        width: 130px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+    }
+
+    input[type=text]:focus {
+        width: 20%;
+    }
+</style>
+
+<script>
+    (function() {
+        var cx = '003524276728032240363:5ezbh1ap1vo';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+    })();
+</script>
+<div style="margin-left: 180px;margin-right: 800px;" align="right">
+    <gcse:search></gcse:search>
+</div>
+
+<div class="mainForMaps" id="googleMap" style="width:85%;height:400px;"></div>
+
+<script>
+
+    function myMap() {
+        var mapProp= {
+            center:new google.maps.LatLng(17.2206315,80.6542347),
+            zoom:5,
+        };
+        var map =new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+
+        var marker = new google.maps.Marker({
+            position:{lat:17.4126274,lng:78.2679578},
+            map:map,
+            title:"Hyderabad\nLatitude: 17.4126274\nLongitude: 78.2679578",
+            icon: "bhoot3.png",
+            // animation: google.maps.Animation.BOUNCE
+        });
+
+        var marker = new google.maps.Marker({
+            position:{lat:16.5103177,lng:80.5744204},
+            map:map,
+            title:"Vijayawada\nLatitude: 16.5103177\nLongitude: 80.5744204",
+            icon: "bhoot2.png",
+        });
+
+        var marker = new google.maps.Marker({
+            position:{lat:17.7389495,lng:83.1225035},
+            map:map,
+            title:"Vizag\nLatitude: 17.7389495\nLongitude: 83.1225035",
+            icon: "bhoot1.png",
+        });
+    }
+
+</script>
+
+
+
+<script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7P57mjM3GiufAaSn5mzBBzcEZBWsWxHI&callback=myMap">
+</script>
+
+<br>
+<br>
+
+<script>
+    function toggle(element) {
+        var elem = document.getElementById(element);
+        if (elem.style.display ===  "none") {
+            elem.style.display = "block";
+        } else {
+            elem.style.display = "none";
+        }
+    }
+</script>
+
+<br>
+
+<br>
+
+<table style="margin-left: 190px;padding-right: 120px" width="94.3%">
+    <tr style="font-size: 30px; background-color: #818181" onclick="toggle('answer1')" class="pointer">
+        <td style="background-color: #818181;padding-left: 15px;margin-top: 5px;margin-bottom: 5px">About this company</td>
+    </tr>
+    <tr style="display: none;font-size: 25px; background-color: #aaaaaa" id="answer1">
+        <td style="background-color: #aaaaaa;padding-left: 15px;margin-top: 5px;margin-bottom: 5px">
+        This company is one of the leading oil and gas company started in 1990 and have been successful thorough out the years of its development and is constantly raising its production in quantity as well ass quality.
+        </td>
+    </tr>
+    <tr style="font-size: 30px; background-color: #818181" onclick="toggle('answer2')" class="pointer">
+        <td style="background-color: #818181;padding-left: 15px;margin-top: 5px;margin-bottom: 5px">Different branches</td>
+    </tr>
+    <tr style="display: none;font-size: 25px; background-color: #aaaaaa" id="answer2">
+        <td style="background-color: #aaaaaa;padding-left: 15px;margin-top: 5px;margin-bottom: 5px">There are 3 main branches of this company and those are<br>
+            - <a href="hyderabadPic.png">Hyderabad</a><br>
+            - <a href="vijayawadaPic.jpg">Vijayawada</a><br>
+            - <a href="vizagPic.jpg">Vizag</a></td>
+    </tr>
+</table>
+
+<hr style="margin-left: 190px">
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="fixed">
+    <p>COPY RIGHT © DETAILS</p>
+    <p>ABOUT US | CONTACT US</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {box-sizing: border-box;}
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #e9e9e9;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #2196F3;
+            color: white;
+        }
+
+        .topnav .search-container {
+            float: right;
+        }
+
+        .topnav input[type=text] {
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
+            border: none;
+        }
+
+        .topnav .search-container button {
+            float: right;
+            padding: 6px 10px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background: #ddd;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .topnav .search-container button:hover {
+            background: #ccc;
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav .search-container {
+                float: none;
+            }
+            .topnav a, .topnav input[type=text], .topnav .search-container button {
+                float: none;
+                display: block;
+                text-align: left;
+                width: 100%;
+                margin: 0;
+                padding: 14px;
+            }
+            .topnav input[type=text] {
+                border: 1px solid #ccc;
+            }
+        }
+    </style>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        .sidenav .search-container {
+            float: right;
+        }
+
+        .sidenav .search-container button {
+            float: right;
+            padding: 6px 10px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background: #ddd;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .sidenav .search-container button:hover {
+            background: #ccc;
+        }
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+        header{
+            background-color: white;
+
+            padding: 30px;
+
+            text-align: center;
+
+            font-size: 40px;
+
+            color: black;
+
+        }
+
+
+        footer {
+            background-color: grey;
+
+            width: 96%;
+
+            padding: 30px;
+
+
+            text-align: Center;
+            font-size: 20px;
+
+            color: black;
+
+            bottom :0px;
+
+        }
+    </style>
+</head>
+<body>
+
+<div style="padding-left:16px">
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+    <head>
+        <style type="text/css">.gm-style .gm-style-mtc label,.gm-style .gm-style-mtc div{font-weight:400}
+        footer{background-color: white;
+            text-align: center}
+        </style>
+        <style type="text/css">.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px}
+        </style>
+
+
+
+        <style id="stndz-style"></style><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="icon" href="https://www.distancecalculator.net/favicon.ico">
+        <script type="text/javascript" defer="" async="" src="https://track.uc.cn/uaest.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-84677098-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+        <style>*{box-sizing:border-box;margin:0;padding:0}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-size:1em;overflow-y:scroll}body{line-height:1.6em;font-weight:400;background-color:#fff;color:#333}article,header,aside,main,nav,footer,label{display:block}a{background-color:transparent;color:#3372df;text-decoration:none}a:active,a:hover{outline:0;color:#111}img{border:0}pre{overflow:auto;font-family:monospace,monospace;padding:10px;font-size:1em;border:1px solid #eee;background-color:#fafafa}label{margin-bottom:.1em}fieldset,legend{border:0}legend{font-weight:bold}input,select,textarea{color:inherit;font:inherit;padding:.5em;margin:0 5px 5px 0;border:1px solid #ccc;box-shadow:inset 0 1px 3px #ddd;border-radius:4px;display:inline-block;font-size:100%;line-height:normal;max-width:100%}select{text-transform:none;background-color:#fff;display:inline-block;font-size:100%;height:2.5em}button,.button{overflow:visible;font:inherit;text-transform:none;letter-spacing:1px;border:0;line-height:normal;white-space:nowrap;padding:.5em;color:#fff;background-color:#1f8dd6;border-radius:4px;display:inline-block;font-size:100%;text-align:center}.button:focus,.button:hover{opacity:.9}button,html input[type="button"],input[type="submit"]{cursor:pointer}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}textarea{overflow:auto}table{border-collapse:collapse;border-spacing:0;border:1px solid #ddd;margin-bottom:1em;width:95%;box-shadow:0 1px 4px 0 rgba(0,0,0,.5)}td,th{padding:5px;text-align:left}th{background-color:#e2f0c6}tr{border-bottom:1px solid #ddd}tr:nth-child(odd){background-color:#f7f7f7}h1,h2,h3,h4,h5,h6{font-weight:400;line-height:1.3em;margin:.3em 0}h1{font-size:1.6em}h2{font-size:1.5em}h3{font-size:1.4em}h4{font-size:1.3em}h5{font-size:1.2em}p{margin:5px 0}ul{padding-left:20px;list-style-type:square}ul li{line-height:1.7em}.row:after{content:"";clear:both;display:block}[class*=col-]{padding:1px;float:left;width:100%}header .row,main,nav,footer .row{max-width:1160px;margin:0 auto}.comments{margin:5px 0;padding:10px;background-color:#F9FFF3;border:1px solid #D2DAC9}.comcon{background-color:#fff;overflow:auto;border-radius:4px;padding:10px;margin:8px 0}.comaut{font-weight:600}.comcon .date{color:#555;font-size:85%;float:right}.comments form{margin:15px 0;background-color:#f4f4f4;padding:10px;border-radius:4px}.comcon p{border-top:1px dashed #ccc;clear:left}#message{background-color:#E3F1D4;padding:10px;}header{z-index:1;background-color:#f4f4f4;margin-bottom:4px}header form{text-align:center;display:flex}header img{display:block}header input{margin:0 5px 0 0}main{padding:5px;min-height:420px;background-color:#fff;word-wrap:break-word}footer{font-size:90%;padding:20px 0;background-color:#eee;border-top:1px solid #ddd}.navbar-brand img {margin-top:7px}.form{padding:5px;background-color:#f8f8f8;margin-bottom:10px}.center,.center td,.center th{text-align:center}.center table{margin:5px auto}.noblock{display:inline-block}.rounded{border-radius:4px}.bordertop{border-top:1px dashed #ccc;}.borderbottom{border-bottom:1px dashed #ccc;padding-bottom:5px;}.bordered{border:1px solid #dedede}.m38{margin-top:38px}.margin10{margin:10px 0}.admr15{margin:5px 0}.full-width{width:100%}.bgrs{background-color:#fafafa;padding:5px}.bg-gray{background-color:#f8f8f8}.shadow,.comcon,.comments form{box-shadow:0 1px 4px 0 rgba(0,0,0,.5)}.margin20{margin:20px 0}.margin10a{display:block;margin:10px auto}time,ul .date{color:#555;font-size:85%;display:block}.social{margin:5px 0}.share-on-twitter{background:#41b7d8}.share-on-facebook{background:#3b5997}.share-on-googleplus{background:#d64937}.social a:hover{color:#fff;text-shadow:none}.social .button{font-size:80%;text-shadow:0 1px 2px #333}.social .scount{border:1px solid #aaa;margin-right:4px;padding:7px 4px;font-size:85%;background-color:#f5f5f5;color:#555}.list-horizontal,.list-vertical{list-style-type:none}.list-horizontal li,#breadcrumb li{display:inline-block}.list-horizontal li a{padding:2px}.list-vertical li{width:100%;border-bottom:1px dotted #333}.list-vertical li a{display:block;padding:2px 0}.list-vertical li a:before,.list-horizontal li a:before,#breadcrumb li a:after{content:" \00bb";padding-right:5px;color:#bbb}.list-horizontal{padding-left:2px}#breadcrumb{min-height:27px;font-size:90%;border-bottom:1px dotted #ccc}.cd-top{overflow:hidden;display:inline-block;height:40px;width:40px;position:fixed;bottom:40px;right:10px;z-index:10;text-align:center;font-size:36px;line-height:55px;color:#fff;background-color:rgba(125,125,125,.5);visibility:hidden;opacity:0;border-radius:4px}.cd-top:hover{opacity:1;color:#eee}.cd-is-visible{visibility:visible;opacity:1}.distance-number{font-size:2.3em;line-height:1.2;font-weight:300;margin-top:12px;letter-spacing:1px}.distance-number small{color:#333;display:block;font-size:.6em}.red{color:#dd171b}.blue{color:#2973ab}.map{margin-bottom:10px}.distances{text-align:center}.radio{display:inline-block;margin-right:10px}@media only screen and (min-width:768px){html{font-size:1.125em}body{line-height:1.6em}.col-1{width:8.33%}.col-2{width:16.66%}.col-3{width:28%}.col-4{width:33.33%}.col-5{width:41.66%}.col-6{width:50%}.col-7{width:58.33%}.col-8{width:66.66%}.col-9{width:72%}.col-10{width:83.33%}.col-11{width:91.66%}.col-12{width:100%}.col-7-10{width:70%}.col-3-10{width:30%}form,label{margin:5px 0}[class*=col-]{padding:5px}header form{text-align:left}}@media(max-width:480px){html{font-size:16px}.admr15{margin:15px 0}table{width:100%}.comments,.comcon{padding:5px}.social{display:block;text-align:center}h1,h2,h3,h4,h5,h6{line-height:1.3em;margin:5px 0}h1{font-size:1.4em}h2{font-size:1.3em}h3,h4,h5{font-size:1.2em}td,th{padding:4px 3px}.cd-top{right:5px;bottom:5px}.map{max-height:340px}header form{padding-bottom:7px}header input{font-size:90%;max-width:42%;margin:0 3px}header .button svg{width:16px;height:16px}footer{text-align:center}footer span{display:block}.navbar-brand img{margin-top:1px}.car{width:27px;height:23px;margin-right:3px}.air{width:27px;height:27px;margin-right:3px}.distance-number{font-size:1.8em}}@media print{.social,.comments{display:none}}@media(max-width:47.999em){header{position:fixed;left:0;top:0;right:0;display:block}main{margin-top:84px;padding:5px}header img{margin:0 auto}.nofx{position:initial}.nomr{margin-top:5px}.m2{width:50%}.m38{margin-top:3px;width:90%}}@media (min-width:800px){.form,button,.button{padding:.4em .7em}}</style>
+        <link rel="icon" sizes="192x192" href="https://www.distancecalculator.net/icon.png">
+        <link rel="apple-touch-icon" href="https://www.distancecalculator.net/apple-touch-icon-152x152.png" sizes="152x152"><title>Distance Calculator Find Distance Between Cities</title>
+        <meta name="description" content="Distance calculator helps you to find the distance between cities and calculate the flying and driving distance in both kilometers and miles.">
+        <style>@font-face{font-family:uc-nexus-iconfont;src:url(chrome-extension://pogijhnlcfmcppgimcaccdkmbedjkmhi/res/font_9qmmi8b8jsxxbt9.woff) format('woff'),url(chrome-extension://pogijhnlcfmcppgimcaccdkmbedjkmhi/res/font_9qmmi8b8jsxxbt9.ttf) format('truetype')}</style><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/30/9/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/30/9/map.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/30/9/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/30/9/controls.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/30/9/places_impl.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/30/9/marker.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/30/9/infowindow.js"></script><style type="text/css">.gm-style {
+        font: 400 11px Roboto, Arial, sans-serif;
+        text-decoration: none;
+    }
+    .gm-style img { max-width: none; }</style><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/30/9/onion.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/30/9/stats.js"></script></head>
+    <body>
+    <main class="nomr">
+        <div class="row">
+            <div class="col-9">
+                <p align="center"><h1><strong>Distance calculator</strong></h1></p>
+                <form id="cities-form" onsubmit="calculate();return false;" class="form shadow rounded"><fieldset>
+                    <div class="row">
+                        <div class="col-4">
+                            <label for="originCity">Start Location</label>
+                            <input type="text" id="originCity" name="originCity" class="full-width" placeholder="Origin city or place name" value="" required="" autocomplete="off">
+                        </div>
+                        <div class="col-4">
+                            <label for="destinationCity">End Location</label>
+                            <input type="text" id="destinationCity" name="destinationCity" class="full-width" placeholder="Destination city or place name" value="" required="" autocomplete="off">
+                        </div>
+                        <div class="col-4">
+                            <label for="unitKm">Distance Unit</label>
+                            <label for="unitKm" class="radio"><input type="radio" name="unitOptions" id="unitKm" value="kilometers" checked="checked" onchange="CountDistance();" title="Calculate distance with kilometers unit"> km</label>
+                            <label for="unitMiles" class="radio"><input type="radio" name="unitOptions" id="unitMiles" value="miles" onchange="CountDistance();" title="Calculate distance with miles unit"> miles</label>
+                            <label for="unitMeters" class="radio"><input type="radio" name="unitOptions" id="unitMeters" value="meters" onchange="CountDistance();" title="Calculate distance with meters unit"> meters</label>
+
+                        </div>
+                    </div>
+                </fieldset>
+                </form>
+                <div class="row bgrs bordered rounded">
+                    <div class="col-4 m2 center"><h2>Pipe line</h2><img src="" class="air" width="32" height="32" alt="">
+                        <span id="distance-km" class="distance-number red" title="Great Circle Distance">0 km</span></div>
+                    <div class="col-4 m2 center"><h2>Distance</h2><img src="r.png" class="car" width="32" height="27" alt="">
+                        <span id="driving-distance-km" class="distance-number blue" title="Driving Distance">0 km</span></div>
+
+                </div>
+                <div id="distance-map" style="width: 100%; height: 440px; margin-top: 5px; position: relative; overflow: hidden;" class="map shadow"><div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);"><div class="gm-style" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;"><div tabindex="0" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;) 8 8, default;"><div style="z-index: 1; position: absolute; top: 0px; left: 0px; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);"><div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; position: absolute; left: 575px; top: -36px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 319px; top: -36px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 319px; top: 220px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 575px; top: 220px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 63px; top: -36px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 63px; top: 220px;"></div><div style="width: 256px; height: 256px; position: absolute; left: -193px; top: 220px;"></div><div style="width: 256px; height: 256px; position: absolute; left: -193px; top: -36px;"></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: -1;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 575px; top: -36px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 319px; top: -36px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 319px; top: 220px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 575px; top: 220px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 63px; top: -36px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 63px; top: 220px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -193px; top: 220px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -193px; top: -36px;"></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="position: absolute; left: 575px; top: -36px; transition: opacity 200ms ease-out;"><img draggable="false" alt="" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i2!2i2!3i1!4i256!2m3!1e0!2sm!3i395091811!3m9!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=89512" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 319px; top: -36px; transition: opacity 200ms ease-out;"><img draggable="false" alt="" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i2!2i1!3i1!4i256!2m3!1e0!2sm!3i395091823!3m9!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=15587" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 319px; top: 220px; transition: opacity 200ms ease-out;"><img draggable="false" alt="" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i2!2i1!3i2!4i256!2m3!1e0!2sm!3i395091823!3m9!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=51608" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 575px; top: 220px; transition: opacity 200ms ease-out;"><img draggable="false" alt="" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i2!2i2!3i2!4i256!2m3!1e0!2sm!3i395091811!3m9!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=125533" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 63px; top: -36px; transition: opacity 200ms ease-out;"><img draggable="false" alt="" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i2!2i0!3i1!4i256!2m3!1e0!2sm!3i395091823!3m9!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=126915" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 63px; top: 220px; transition: opacity 200ms ease-out;"><img draggable="false" alt="" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i2!2i0!3i2!4i256!2m3!1e0!2sm!3i395091823!3m9!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=31865" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -193px; top: -36px; transition: opacity 200ms ease-out;"><img draggable="false" alt="" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i2!2i3!3i1!4i256!2m3!1e0!2sm!3i395091823!3m9!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=55073" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -193px; top: 220px; transition: opacity 200ms ease-out;"><img draggable="false" alt="" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i2!2i3!3i2!4i256!2m3!1e0!2sm!3i395091823!3m9!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=91094" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div></div></div><div class="gm-style-pbc" style="z-index: 2; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; opacity: 0;"><p class="gm-style-pbt"></p></div><div style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px;"><div style="z-index: 1; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px;"></div></div><div style="z-index: 4; position: absolute; top: 0px; left: 0px; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);"><div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div></div></div><div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"><a target="_blank" href="https://maps.google.com/maps?ll=0,-65.742187&amp;z=2&amp;t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=apiv3" title="Click to see this area on Google Maps" style="position: static; overflow: visible; float: none; display: inline;"><div style="width: 66px; height: 26px; cursor: pointer;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></a></div><div style="padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 256px; height: 148px; position: absolute; left: 238px; top: 130px; background-color: white;"><div style="padding: 0px 0px 10px; font-size: 16px;">Map Data</div><div style="font-size: 13px;">Map data ©2017</div><div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; z-index: 10000; cursor: pointer;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png" draggable="false" style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div><div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 72px; bottom: 0px; width: 91px;"><div draggable="false" class="gm-style-cc" style="-webkit-user-select: none; height: 14px; line-height: 14px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a style="color: rgb(68, 68, 68); text-decoration: none; cursor: pointer; display: none;">Map Data</a><span>Map data ©2017</span></div></div></div><div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;"><div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Map data ©2017</div></div><div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; -webkit-user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a href="https://www.google.com/intl/en-US_US/help/terms_maps.html" target="_blank" style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);">Terms of Use</a></div></div><div style="cursor: pointer; width: 25px; height: 25px; overflow: hidden; margin: 10px 14px; position: absolute; top: 0px; right: 0px;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/sv9.png" draggable="false" class="gm-fullscreen-control" style="position: absolute; left: -52px; top: -86px; width: 164px; height: 175px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div draggable="false" class="gm-style-cc" style="-webkit-user-select: none; height: 14px; line-height: 14px; display: none; position: absolute; right: 0px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a target="_new" title="Report errors in the road map or imagery to Google" href="https://www.google.com/maps/@0,-65.7421875,2z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3" style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;">Report a map error</a></div></div><div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" draggable="false" controlwidth="28" controlheight="93" style="margin: 10px; -webkit-user-select: none; position: absolute; bottom: 107px; right: 28px;"><div class="gmnoprint" controlwidth="28" controlheight="55" style="position: absolute; left: 0px; top: 38px;"><div draggable="false" style="-webkit-user-select: none; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; width: 28px; height: 55px; background-color: rgb(255, 255, 255);"><div title="Zoom in" aria-label="Zoom in" tabindex="0" style="position: relative; width: 28px; height: 27px; left: 0px; top: 0px;"><div style="overflow: hidden; position: absolute; width: 15px; height: 15px; left: 7px; top: 6px;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl.png" draggable="false" style="position: absolute; left: 0px; top: 0px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 120px; height: 54px;"></div></div><div style="position: relative; overflow: hidden; width: 67%; height: 1px; left: 16%; top: 0px; background-color: rgb(230, 230, 230);"></div><div title="Zoom out" aria-label="Zoom out" tabindex="0" style="position: relative; width: 28px; height: 27px; left: 0px; top: 0px;"><div style="overflow: hidden; position: absolute; width: 15px; height: 15px; left: 7px; top: 6px;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl.png" draggable="false" style="position: absolute; left: 0px; top: -15px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 120px; height: 54px;"></div></div></div></div><div class="gm-svpc" controlwidth="28" controlheight="28" style="box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; border-radius: 2px; width: 28px; height: 28px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;) 8 8, default; position: absolute; left: 0px; top: 0px; background-color: rgb(255, 255, 255);"><div style="position: absolute; left: 1px; top: 1px;"></div><div style="position: absolute; left: 1px; top: 1px;"><div aria-label="Street View Pegman Control" style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/cb_scout5.png" draggable="false" style="position: absolute; left: -147px; top: -26px; width: 215px; height: 835px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div aria-label="Pegman is on top of the Map" style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/cb_scout5.png" draggable="false" style="position: absolute; left: -147px; top: -52px; width: 215px; height: 835px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div aria-label="Street View Pegman Control" style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/cb_scout5.png" draggable="false" style="position: absolute; left: -147px; top: -78px; width: 215px; height: 835px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div></div><div class="gmnoprint" controlwidth="28" controlheight="0" style="display: none; position: absolute;"><div title="Rotate map 90 degrees" style="width: 28px; height: 28px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; cursor: pointer; display: none; background-color: rgb(255, 255, 255);"><img src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl4.png" draggable="false" style="position: absolute; left: -141px; top: 6px; width: 170px; height: 54px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div class="gm-tilt" style="width: 28px; height: 28px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; top: 0px; cursor: pointer; background-color: rgb(255, 255, 255);"><img src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl4.png" draggable="false" style="position: absolute; left: -141px; top: -13px; width: 170px; height: 54px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div></div><div class="gmnoprint" style="margin: 10px; z-index: 0; position: absolute; cursor: pointer; left: 0px; top: 0px;"><div class="gm-style-mtc" style="float: left;"><div draggable="false" title="Show street map" style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 8px; border-bottom-left-radius: 2px; border-top-left-radius: 2px; -webkit-background-clip: padding-box; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; min-width: 20px; font-weight: 500; background-color: rgb(255, 255, 255); background-clip: padding-box;">Map</div><div style="z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; position: absolute; left: 0px; top: 30px; text-align: left; display: none; background-color: white;"><div draggable="false" title="Show street map with terrain" style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 6px 8px 6px 6px; direction: ltr; text-align: left; white-space: nowrap; background-color: rgb(255, 255, 255);"><span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle; background-color: rgb(255, 255, 255);"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; display: none;"><img src="https://maps.gstatic.com/mapfiles/mv/imgs8.png" draggable="false" style="position: absolute; left: -52px; top: -44px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 68px; height: 67px;"></div></span><label style="vertical-align: middle; cursor: pointer;">Terrain</label></div></div></div><div class="gm-style-mtc" style="float: left;"><div draggable="false" title="Show satellite imagery" style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(86, 86, 86); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 8px; border-bottom-right-radius: 2px; border-top-right-radius: 2px; -webkit-background-clip: padding-box; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; border-left-width: 0px; min-width: 37px; background-color: rgb(255, 255, 255); background-clip: padding-box;">Satellite</div><div style="z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; position: absolute; right: 0px; top: 30px; text-align: left; display: none; background-color: white;"><div draggable="false" title="Show imagery with street names" style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 6px 8px 6px 6px; direction: ltr; text-align: left; white-space: nowrap; background-color: rgb(255, 255, 255);"><span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle; background-color: rgb(255, 255, 255);"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden;"><img src="https://maps.gstatic.com/mapfiles/mv/imgs8.png" draggable="false" style="position: absolute; left: -52px; top: -44px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 68px; height: 67px;"></div></span><label style="vertical-align: middle; cursor: pointer;">Labels</label></div></div></div></div></div></div></div>
+
+                <script>function gotop(){return document.body.scrollTop=document.documentElement.scrollTop=0,!1}window.onscroll=function(){var o=document.getElementsByTagName("body")[0].scrollTop;o>=100?document.getElementById("cd-top").className="cd-top cd-is-visible":document.getElementById("cd-top").className="cd-top"};var head=document.getElementsByTagName("head")[0],insertBefore=head.insertBefore;head.insertBefore=function(e,o){e.href&&0===e.href.indexOf("https://fonts.googleapis.com/css?family=Roboto")||insertBefore.call(head,e,o)};</script><script type="text/javascript">
+                function initialize(){var e=new google.maps.LatLng(0,0),t={zoom:2,center:e,mapTypeId:google.maps.MapTypeId.ROADMAP,scrollwheel:!1};map=new google.maps.Map(document.getElementById("distance-map"),t),directionsService=new google.maps.DirectionsService,directionsDisplay=new google.maps.DirectionsRenderer,directionsDisplay.setOptions({suppressMarkers:!0});var o=document.getElementById("originCity"),n=new google.maps.places.Autocomplete(o);n.bindTo("bounds",map);var a=new google.maps.InfoWindow,s=new google.maps.Marker({map:map});google.maps.event.addListener(n,"place_changed",function(){llOrg=null,a.close(),s.setVisible(!1);var e=n.getPlace();if(e.geometry){e.geometry.viewport?map.fitBounds(e.geometry.viewport):map.setCenter(e.geometry.location),s.setPosition(e.geometry.location),llOrg=e.geometry.location,s.setVisible(!0);var t="";e.address_components&&(t=[e.address_components[0]&&e.address_components[0].short_name||"",e.address_components[1]&&e.address_components[1].short_name||"",e.address_components[2]&&e.address_components[2].short_name||""].join(" ")),a.setContent("<div><strong>"+e.name+"</strong><br>"+t),a.open(map,s),google.maps.event.addListener(s,"click",function(){a.open(map,this)}),calculate(),document.getElementById("destinationCity").focus()}});var i=document.getElementById("destinationCity"),l=new google.maps.places.Autocomplete(i);l.bindTo("bounds",map);var r=new google.maps.InfoWindow,d=new google.maps.Marker({map:map});google.maps.event.addListener(l,"place_changed",function(){llDes=null,r.close(),d.setVisible(!1);var e=l.getPlace();if(e.geometry){e.geometry.viewport?map.fitBounds(e.geometry.viewport):map.setCenter(e.geometry.location),d.setPosition(e.geometry.location),llDes=e.geometry.location,d.setVisible(!0);var t="";e.address_components&&(t=[e.address_components[0]&&e.address_components[0].short_name||"",e.address_components[1]&&e.address_components[1].short_name||"",e.address_components[2]&&e.address_components[2].short_name||""].join(" ")),r.setContent("<div><strong>"+e.name+"</strong><br>"+t),r.open(map,d),google.maps.event.addListener(d,"click",function(){r.open(map,this)}),calculate()}});}function calculate(){if(llOrg&&llDes){var e=[llOrg,llDes];da=0,dd=0,du='',void 0!==path1&&path1.setMap(null),void 0!==path1&&path2.setMap(null),null!==directionsDisplay&&(directionsDisplay.setMap(null),directionsDisplay.set("directions",null)),directionsDisplay.setMap(map),path1=new google.maps.Polyline({path:e,strokeColor:"#FF0000",strokeOpacity:.5,geodesic:!0,strokeWeight:3}),path1.setMap(map),path2=new google.maps.Polyline({path:e,strokeColor:"#000000",strokeOpacity:.5,strokeWeight:3}),path2.setMap(map),da=google.maps.geometry.spherical.computeDistanceBetween(llOrg,llDes),CountDistance();var t={origin:llOrg,destination:llDes,travelMode:google.maps.TravelMode.DRIVING};directionsService.route(t,function(e,t){if(t===google.maps.DirectionsStatus.OK)directionsDisplay.setDirections(e),calculateDistances();else{document.getElementById("driving-distance-km").innerHTML="not possible";var o=new google.maps.LatLngBounds;o.extend(llOrg),o.extend(llDes),map.fitBounds(o)}})}bsy=!1}function calculateDistances(){var e=new google.maps.DistanceMatrixService;e.getDistanceMatrix({origins:[llOrg],destinations:[llDes],travelMode:google.maps.TravelMode.DRIVING,unitSystem:google.maps.UnitSystem.METRIC,avoidHighways:!1,avoidTolls:!1},callback)}function callback(e,t){if(t!==google.maps.DistanceMatrixStatus.OK)alert("Driving distance cannot be calculated.");else for(var o=e.originAddresses,n=(e.destinationAddresses,0);n<o.length;n++)for(var a=e.rows[n].elements,s=0;s<a.length;s++)dd=a[s].distance.value,du=a[s].duration.text,CountDistance()}function CountDistance(){var e=0,t=0,o="",n=document.querySelector('input[name="unitOptions"]:checked').value;"miles"===n?(o=" miles",e=Math.round(.621371192*da/1e3),t=Math.round(.621371192*dd/1e3)):"kilometers"===n?(o=" km",e=Math.round(da/1e3),t=Math.round(dd/1e3)):"meters"===n&&(o=" m",e=Math.round(da),t=Math.round(dd)),0!==parseFloat(e)&&(document.getElementById("distance-km").innerHTML=e+o),0!==parseFloat(t)&&(document.getElementById("driving-distance-km").innerHTML=t+o+' <small>'+du+'</small>')}var da=0,dd=0,du='';var directionsDisplay,directionsService,map,llOrg,llDes,path1,path2;
+            </script>
+                <script src="https://maps.googleapis.com/maps/api/js?callback=initialize&amp;key=AIzaSyDPc-A7orTWTD6G85fWfDfF50hdtDESHyg&amp;libraries=geometry,places" async="" defer=""></script>
+                <script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","name":"Distance Calculator","url":"https://www.distancecalculator.net/","sameAs":["https://plus.google.com/+DistancecalculatorNet","https://twitter.com/DistanceCalc"]}</script><div class="pac-container pac-logo" style="display: none; width: 162px; position: absolute; left: 28px; top: 278px;"></div><div class="pac-container pac-logo" style="display: none; width: 162px; position: absolute; left: 202px; top: 278px;"></div><div style="position: absolute; left: 0px; top: -2px; height: 1px; overflow: hidden; visibility: hidden; width: 1px;"><span style="position: absolute; font-size: 300px; width: auto; height: auto; margin: 0px; padding: 0px; font-family: Roboto, Arial, sans-serif;">BESbswy</span></div>
+                <script>
+                    function calc() {
+
+                        var D = "0";
+                        var A = document.getElementById("robots").value;
+                        var B = document.getElementById("r").value;
+
+                        D = (parseFloat(B)/(parseFloat(A)*0.1))/24;
+                        if(D>1){
+                            document.getElementById("result").innerHTML = D+" Days";
+                        }
+                        else{
+                            document.getElementById("result").innerHTML = D+" Day";
+                        }
+                        return false;
+                    }
+                </script>
+                <h1>Robots Calculator</h1>
+                <br>
+                <html>
+                <body>
+                <input type="text" name="Value1" placeholder="Enter number" id="test1">
+                <button onclick="condition();" >Print</button>
+                <div id="test2"></div>
+                <script type="text/javascript">
+                    function condition() {
+
+                        var a=document.getElementById("test1").value;
+
+                        if (a >0 && a<=10000) {
+                            document.getElementById("test2").innerHTML = "1 Robot and 2 Days Required";
+                        }
+
+                        else if (a >10000 && a<=20000 ) {
+                            document.getElementById("test2").innerHTML = "2 Robot and 3 Days Required";
+
+
+                        }     else if (a >20000 && a<=30000 ) {
+                            document.getElementById("test2").innerHTML = "3 Robot and 4 Days Required";
+
+
+                        }     else if (a >30000 && a<=40000 ) {
+                            document.getElementById("test2").innerHTML = "4 Robot and 5 Days Required";
+
+
+                        }     else if (a >40000 && a<=50000 ) {
+                            document.getElementById("test2").innerHTML = "5 Robot and 6 Days Required";
+
+
+                        }     else if (a >50000 && a<=60000 ) {
+                            document.getElementById("test2").innerHTML = "6 Robot and 7 Days Required";
+
+
+                        }     else if (a >60000 && a<=70000 ) {
+                            document.getElementById("test2").innerHTML = "7 Robot and 8 Days Required";
+
+
+                        }     else if (a >80000 && a<=90000 ) {
+                            document.getElementById("test2").innerHTML = "8 Robot and 9 Days Required";
+
+
+                        }     else if (a >90000 && a<=100000 ) {
+                            document.getElementById("test2").innerHTML = "9 Robot and 10 Days Required";
+
+
+                        }
+                        else {
+                            document.getElementById("test2").innerHTML = "Enter Valid Input: Numbers only and it should be in range 0-100000 only";
+                        }
+
+                    }
+
+                </script>
+                </body>
+                </html>
+            </div>
+        </div>
+    </main>
+    </body>
+</div>
+</body>
+</html>

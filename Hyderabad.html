@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hyderabad</title>
+    <link rel="stylesheet" type="text/css" href="StyleSheets/Main.css">
+</head>
+
+
+<body>
+<div class="sidenav">
+    <a href="HomePage.html" id="homepage">HomePage</a>
+    <a href="Hyderabad.html" id="hyderabad">Hyderabad</a>
+    <a href="Vijayawada.html" id="vijayawada">Vijaywada</a>
+    <a href="Vizag.html" id="vizag">Vizag</a>
+    <a href="DistanceSecond.html">Distance Calculator</a>
+</div>
+
+<p style="font-size: 30px" class="main">
+    HYDERABAD
+</p>
+
+<div class="mainForMaps" id="googleMap" style="width:85%;height:400px;"></div>
+
+<script>
+    function myMap() {
+        var mapProp= {
+            center:new google.maps.LatLng(17.4126274,78.2679578),
+            zoom:9,
+        };
+        var map =new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+        var marker = new google.maps.Marker({
+            position:{lat:17.4126274,lng:78.2679578},
+            map:map,
+        });
+    }
+
+</script>
+
+<script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7P57mjM3GiufAaSn5mzBBzcEZBWsWxHI&callback=myMap">
+</script>
+
+<div class="fixed">
+    <p>COPY RIGHT © DETAILS</p>
+    <p>ABOUT US | CONTACT US</p>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</body>
+</html>
